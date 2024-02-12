@@ -150,12 +150,41 @@ li .dropdown-item:hover {
    background-position: center;
 }
 
-.bg-third-color {
-   background-color: var(--third-color);
+.card-img-height {
+   height: 18rem;
 }
 
 .img-flayer {
    filter: brightness(50%); 
+}
+
+.text-flayer{
+   background-image:linear-gradient(rgba(0, 0, 0, 0.656),rgba(0,0,0,0.5)) ,url(../img/flayer.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   height: 80vh;
+   padding-top: 5rem;
+} 
+.text-flayer h1, .text-flayer h2{
+   font-family:'Raleway', sans-serif;
+   font-weight: bold;
+   font-size: 4em;
+   line-height: normal;
+}
+/* .text-flayer h1, .text-flayer h2{
+   font-family:'Raleway', sans-serif;
+   font-weight: bold;
+   font-size: 4em;
+   line-height: 8vh;
+   
+}
+/* .text-first-color {
+   color: var(--first-color);
+}
+
+.text-third {
+   color: var(--third-color);
 }
 .text-flayer {
    position: absolute;
@@ -169,7 +198,13 @@ li .dropdown-item:hover {
    font-weight: bold;
    font-size: 4em;
    line-height: 8vh;
-}
+} */
+.text-flayer h1, .text-flayer h2{
+   font-family:'Raleway', sans-serif;
+   font-weight: bold;
+   font-size: 4em;
+   line-height: 8vh;
+} 
 .text-first-color {
    color: var(--first-color);
 }
