@@ -13,24 +13,16 @@
    --third-alpha-color: #00234b;
    --link-color: #509ee3;
    --link-alpha-color: #f5f5f5bf;
-   --title-color:#509ee3;
+   --title-color: #509ee3;
 
    --bg-color: #f5f5f5;
    --bg-alpha-color: #f5f5f5bf;
-   --bg-image:url(../img/limpieza-salon.jpg);
+   --bg-image-one: url(../img/limpieza-salon.jpg);
+   --bg-image-two: url(../img/limpieza-oficina.jpg);
+   --bg-image-three: url(../img/limpiza-industrial.jpg);
+   --bg-image-four: url(../img/limpieza-comercial.jpg);
 }
-.background-img{
-   background: var(--bg-image);
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-}
-.background-img-two{
-   background: var();
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
-}
+
 /*
     * ******* Reset styles *******
  */
@@ -42,25 +34,33 @@ a {
    color: var(--link-color);
    transition: all .3s ease-out;
 }
+
 /*  footer revisar  */
 .text-color {
    color: var(--second-color);
-   margin-right:0.5rem;
+   margin-right: 0.5rem;
 }
-.text-color:hover{
+
+.text-color:hover {
    color: var(--first-alpha-color);
 }
+
 a:hover {
    color: var(--first-alpha-color);
 }
 
-footer li{
+footer li {
    list-style: none;
 }
 
 /*
     * ******* Boostrap styles*******
  */
+.bi-person-fill {
+   font-size: 2rem;
+   color: red;
+}
+
 .bg-dark {
    /* No se colocara el color seleccionado a menos que se cambie el nombre de la clase o se ultilice el !important */
    background-color: var(--second-color) !important;
@@ -70,8 +70,9 @@ footer li{
 .navbar-toggler {
    background-color: var(--first-alpha-color);
 }
-.navbar-toggler-icon:hover{
-   color: green !important; 
+
+.navbar-toggler-icon:hover {
+   color: green !important;
 }
 
 
@@ -91,7 +92,8 @@ li .dropdown-item:hover {
    --bs-body-bg: #fff;
    --bs-tertiary-bg: none;
 }
-.dropdown-menu li a:hover{
+
+.dropdown-menu li a:hover {
    color: var(--first-color);
 }
 
@@ -105,7 +107,8 @@ li .dropdown-item:hover {
    transition: all 0.3s ease-out;
 }
 
-.navbar-nav .nav-link.active,.navbar-nav .nav-link.show {
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
    color: var(--first-hover-color);
 }
 
@@ -137,21 +140,51 @@ li .dropdown-item:hover {
    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 35, 75, 1.000)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
    opacity: 0.75;
    /* opacidad */
- 
+
 }
 
 /*
     * ******* My styles *******
  */
-.bi-check-lg{
-   color: rgb(11, 213, 11) ;
+.background-img {
+   background: var(--bg-image-one);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.background-img-two {
+   background: var(--bg-image-two);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.background-img-three {
+   background: var(--bg-image-three);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.background-img-four {
+   background: var(--bg-image-four);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.bi-check-lg {
+   color: rgb(11, 213, 11);
    font-size: 1.5rem;
 }
-.services{
+
+.services {
    font-size: 1rem;
    color: black;
-   
+
 }
+
 .bg-color {
    background-color: var(--bg-color);
 }
@@ -166,52 +199,61 @@ li .dropdown-item:hover {
 
 .bg-gradient-blue-green {
    background-color: rgb(253, 253, 253);
-   background-image: linear-gradient(131deg, rgb(255, 255, 255), rgb(204, 200, 200)); /* modificar fondo */
+   background-image: linear-gradient(131deg, rgb(255, 255, 255), rgb(204, 200, 200));
+   /* modificar fondo */
 }
 
 .card-img-height {
    height: 18rem;
 }
-footer{
+
+footer {
    background: var(--third-alpha-color);
 }
-.img-events{
+
+.img-events {
    width: 100%;
 }
-.img-events img{
+
+.img-events img {
    max-width: 100%;
-} 
-.info-events{
+}
+
+.info-events {
    width: 100%;
 }
-.info-events h2{
+
+.info-events h2 {
    color: var(--title-color);
 }
 
-.img-logo{
+.img-logo {
    width: auto;
    height: 12vh;
 }
+
 .img-flayer {
-   filter: brightness(50%); 
+   filter: brightness(50%);
 }
 
-.text-flayer{
-   background-image:linear-gradient(rgba(0, 0, 0, 0.656),rgba(0,0,0,0.5)) ,url(../img/flayer.jpg);
+.text-flayer {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.656), rgba(0, 0, 0, 0.5)), url(../img/flayer.jpg);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
-   background-attachment:fixed ;
+   background-attachment: fixed;
    min-height: 80vh;
    padding: 5rem 0;
-} 
+}
 
-.text-flayer h1, .text-flayer h2{
-   font-family:'Raleway', sans-serif;
+.text-flayer h1,
+.text-flayer h2 {
+   font-family: 'Raleway', sans-serif;
    font-weight: bold;
    font-size: 4em;
    line-height: 8vh;
-}  
+}
+
 .text-first-color {
    color: var(--first-color);
 }
@@ -239,10 +281,13 @@ footer{
       background-color: transparent;
       /* se hace trasnparente el hover */
    }
-   .text-flayer{
+
+   .text-flayer {
       min-height: 50vh;
    }
-   .text-flayer h1, .text-flayer h2{
+
+   .text-flayer h1,
+   .text-flayer h2 {
       font-size: 2.5em;
       line-height: normal;
    }
