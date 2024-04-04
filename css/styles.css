@@ -19,8 +19,12 @@
    --bg-alpha-color: #f5f5f5bf;
    --bg-image-one: url(../img/limpieza-salon.jpg);
    --bg-image-two: url(../img/limpieza-oficina.jpg);
-   --bg-image-three: url(../img/limpiza-industrial.jpg);
+   --bg-image-three: url(../img/limpieza-deposito.jpg);
    --bg-image-four: url(../img/limpieza-comercial.jpg);
+   --bg-image-five: url(../img/limpieza-hogar.jpg);
+   --bg-image-six: url(../img/limpieza-colegio.jpg);
+   --bg-image-seven: url(../img/limpieza-hospital.jpg);
+   --bg-image-eight: url(../img/limpieza-consorcio.jpeg);
 }
 
 /*
@@ -49,6 +53,10 @@ a:hover {
    color: var(--first-alpha-color);
 }
 
+.prueba {
+   resize: none;
+}
+
 footer li {
    list-style: none;
 }
@@ -65,6 +73,10 @@ footer li {
    /* No se colocara el color seleccionado a menos que se cambie el nombre de la clase o se ultilice el !important */
    background-color: var(--second-color) !important;
    border-bottom: 1px solid gray;
+}
+
+.form-control {
+   border: #509ee3 1px solid;
 }
 
 .navbar-toggler {
@@ -174,6 +186,34 @@ li .dropdown-item:hover {
    background-size: cover;
 }
 
+.background-img-five {
+   background: var(--bg-image-five);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.background-img-six {
+   background: var(--bg-image-six);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.background-img-seven {
+   background: var(--bg-image-seven);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.background-img-eight {
+   background: var(--bg-image-eight);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
 .bi-check-lg {
    color: rgb(11, 213, 11);
    font-size: 1.5rem;
@@ -236,6 +276,14 @@ footer {
    filter: brightness(50%);
 }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+.prueba{
+   font-size: 3rem;
+}
 .text-flayer {
    background-image: linear-gradient(rgba(0, 0, 0, 0.656), rgba(0, 0, 0, 0.5)), url(../img/flayer.jpg);
    background-repeat: no-repeat;
@@ -262,19 +310,31 @@ footer {
    color: var(--third-color);
 }
 
-/* PRUEBAAAA */
-/* .whatsapp-icon {
+.whatsapp-icon {
    position: fixed;
-   bottom: 20px;  Ajusta según la posición deseada 
-   right: 20px; Ajusta según la posición deseada 
-   z-index: 9999;
+   bottom: 20px;
+   right: 20px;
+   z-index: 100;
    opacity: 0;
    transition: opacity 0.3s ease;
- }
- 
- .whatsapp-icon.show {
+   width: 4rem;
+   height: 4rem;
+   line-height: 4rem;
+   background-color: #00DD23;
+   border-radius: 50%;
+   text-align: center;
+   font-size: 3rem;
+}
+
+.whatsapp-icon a {
+   color: #ffffff;
+}
+
+
+.whatsapp-icon.show {
    opacity: 1;
- } 
+}
+
 /* *Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
    .nav-item:hover {
