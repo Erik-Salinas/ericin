@@ -5,9 +5,7 @@ function mostrarValor(inputId, spanId) {
 
     input.addEventListener('input', function () {
         span.textContent = input.value;
-
-        
-        span.classList.add("prueba");
+        span.classList.add("number");
     });
 }
 mostrarValor("horas", "select__horas");

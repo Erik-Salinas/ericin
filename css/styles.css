@@ -112,7 +112,7 @@ li .dropdown-item:hover {
 
 .navbar-brand img {
    width: auto;
-   height: 12vh;
+   height: 6rem;
 }
 
 .nav-item {
@@ -263,7 +263,8 @@ footer {
    width: 100%;
 }
 
-.info-events h2 {
+.info-events h2,
+.title h1 {
    color: var(--title-color);
 }
 
@@ -281,9 +282,11 @@ input[type="number"]::-webkit-outer-spin-button {
    -webkit-appearance: none;
    margin: 0;
 }
-.prueba{
-   font-size: 3rem;
+
+.number {
+   font-size: 1.2rem;
 }
+
 .text-flayer {
    background-image: linear-gradient(rgba(0, 0, 0, 0.656), rgba(0, 0, 0, 0.5)), url(../img/flayer.jpg);
    background-repeat: no-repeat;
@@ -293,6 +296,7 @@ input[type="number"]::-webkit-outer-spin-button {
    min-height: 80vh;
    padding: 5rem 0;
 }
+
 
 .text-flayer h1,
 .text-flayer h2 {
@@ -334,8 +338,20 @@ input[type="number"]::-webkit-outer-spin-button {
 .whatsapp-icon.show {
    opacity: 1;
 }
+/* * Movil */
+/* REVISAR PAR ANDROID */
+@media screen and (min-width: 320px) and (max-width: 760px) {
+   .text-flayer {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.656), rgba(0, 0, 0, 0.5)), url(../img/flayer.jpg);
+      background-position: center;
 
-/* *Large devices (desktops, 992px and up) */
+      background-size: initial;
+      background-attachment:initial;
+      padding: 5rem 0;
+   }
+
+}
+/** desktops, 992px*/
 @media (max-width: 992px) {
    .nav-item:hover {
       background-color: transparent;
