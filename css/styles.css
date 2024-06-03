@@ -103,6 +103,7 @@ li .dropdown-item:hover {
 .dropdown-menu {
    --bs-body-bg: #fff;
    --bs-tertiary-bg: none;
+   
 }
 
 .dropdown-menu li a:hover {
