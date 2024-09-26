@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.prueba{
+    background-image: url('../img/fondo_login.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+}
