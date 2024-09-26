@@ -13,198 +13,712 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="icon" href="../img/img/logo-ericin.png">
+    <link rel="icon" href="../img/logo-ericin.png">
 </head>
 
 <body>
     <header class="sticky-top">
-        <!-- data-bs-theme="dark" modificamos color de la hamburguesa -->
         <nav class="  navbar  navbar-expand-lg  bg-dark  " data-bs-theme="dark">
             <div class="container">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../img/img/logo-ericin.png" alt="studio Bad Dog">
-                </a> <!-- Eliminacion del borde -->
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    <img src="../img/logo-ericin.png" alt="ericin pro cleaners">
+                </a>
+                <button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon "></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <!-- collapse es el desplegado de opciones -->
                 <div class=" collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav  ms-lg-auto">
                         <li class="nav-item">
-                            <!-- active es el identificador de la pagina actual -->
-                            <a class="nav-link" href="../index.html">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="../index.html">La empresa</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" aria-current="page" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Sitios
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Servicios
                             </a>
                             <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item nav-link" href="#ultimos-proyectos">Últimos
-                                        proyectos</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item nav-link" href="#single-page"><i>Single
-                                            Page</i></a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item nav-link" href="#multi-page"><i>Multi
-                                            Page</i></a>
-                                </li>
+                                <li><a class="dropdown-item nav-link" href="#limpieza-eventos">
+                                        <i>Limpieza de eventos</i></a></li>
+                                <li><a class="dropdown-item nav-link" href="#limpieza-oficinas">
+                                        <i>Limpieza de
+                                            oficinas</i></a></li>
+                                <li><a class="dropdown-item nav-link" href="#limpiaza-depositos"><i>Limpieza de
+                                            depositos</i></a></li>
+                                <li><a class="dropdown-item nav-link" href="#limpiaza-comercial"> <i>Limpieza de
+                                            comerciales</i></a></li>
+                                <li><a class="dropdown-item nav-link" href="#limpiaza-casas"> <i>Limpieza de
+                                            casas</i></a></li>
+                                <li><a class="dropdown-item nav-link" href="#limpiaza-colegios"> <i>Limpieza de
+                                            colegios</i></a></li>
+                                <li><a class="dropdown-item nav-link" href="#limpiaza-hospitales"> <i>Limpieza de
+                                            hospitales</i></a></li>
+                                <li><a class="dropdown-item nav-link" href="#limpiaza-consorcios"> <i>Limpieza de
+                                            consorcios</i></a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/clientes.html">Clientes</a>
+                            <a class="nav-link" href="cobertura.html">Cobertura</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/comencemos.html">Comencemos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/contacto.html">¿Interesado?</a>
+                            <a class="nav-link" href="contacto.html">¿Interesado?</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main class="pt-5 bg-color">
+    <main class="bg-color">
         <!--  section#.*3 (# especificamos id y class) -->
-        <section id="ultimos-proyectos" class="pb-5">
-            <div class="text-center">
-                <h1>Sitios Web 100% Responsivos</h1>
-                <p class="fs-5">Desarrollo sitios de unaa sólaa y de múltiples páginas.</p>
-            </div>
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <!-- clase active le indica cual es la primera imagen que se muestra en el carrusel -->
-                        <img src="../img/img/work-slide-1.jpg" class="d-block w-100" alt="Trabajo 1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../img/img/work-slide-2.jpg" class="d-block w-100" alt="Trabajo 2">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../img/img/work-slide-3.jpg" class="d-block w-100" alt="Trabajo 3">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </section> <!-- utilizamos el styles para poner una imagen de fondo SI utilizamos variabes-->
-        <section id="single-page" class="min-vh-100 bg-hero-image"
-            style="--bg-image: url(../img/img/site-singlepage.jpg)">
-            <article class="min-vh-100 bg-alpha-color d-flex align-items-center">
+        <!-- utilizamos el styles para poner una imagen de fondo SI utilizamos variabes-->
+        <section class="min-vh-100 bg-hero-image  background-img">
+            <article id="limpieza-eventos" class="min-vh-100 bg-alpha-color d-flex align-items-center p-lg-5">
                 <!-- Incorporacion de una capa transparente sobre la imagen -->
                 <div class="container">
-                    <article class="col-12 col-lg-6 offset-lg-6">
-                        <a class="btn btn-lg btn-success text-white mb-5" href="contacto.html">
-                            <b>Desde $400<small>USD</small></b>
-                            <!-- La etiqueta <b> Indica que el texto debe ser representado con una variable bold, o negrita,de la tipografía que se esté usando. -->
-                        </a>
-                        <h2>Sitio de una sola página</h2>
-                        <small>
-                            El precio puede ser más bajo (o más alto) dependiendo de los requisitos de sus proyectos.
-                        </small>
-                        <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
-                        <p class="my-5 fs-5">
-                            Una <b>sola página</b> o <b>página de destino</b> es un sitio web que consta de una página.
-                            Perfecto para presentar a tu empresa, organización, producto o servicio de una manera
-                            hermosa y moderna en Internet.
-                        </p>
-                        <a class="fs-4 fw-bold" href="contacto.html">Solicite una cotización ahora
-                            <i class="bi bi-chevron-right"></i>
-                        </a>
-                        <div class="row mt-5">
-                            <div class="col">
-                                <p class="bi bi-check-lg">Sitio web de una sola página.</p>
-                                <p class="bi bi-check-lg">100% Responsivo.</p>
-                                <p class="bi bi-check-lg">Diseño personalizado.</p>
+                    <article class="col-12 col-lg-12 d-lg-flex  gap-lg-5">
+                        <div class="img-events">
+                            <img src="../img/limpieza-salon.jpg" alt="Limpieza de eventos">
+                        </div>
+                        <div class="info-events  mb-lg-5">
+                            <h2 class="h1 fw-bold  mt-4 mt-lg-0 mt-sm-0 ">LIMPIEZA PARA EVENTOS</h2>
+                            <h3 class="mt-5 mb-2 h4 text-black fw-semibold">¿Qué es un servicio de limpieza para
+                                eventos?</h3>
+                            <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
+                            <p class=" fs-6 ">
+                                <!-- La etiqueta <b> Indica que el texto debe ser representado con una variable bold, o negrita,de la tipografía que se esté usando. -->
+                                Un <b>servicio de limpieza para eventos </b> consiste en realizar una limpieza profunda
+                                previa y posterior al evento de todo el salón, reponiendo faltantes de insumos e
+                                higienizando y desinfectando todos los sectores en detalle.
+                            </p>
+                            <h3 class="mt-5 mb-2 h4 text-black fw-semibold">Soluciones rápidas de limpieza</h3>
+                            <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
+                            <p class=" fs-6">
+                                Después de alquilar tu salón, es normal encontrarte con un caos que necesita una
+                                solución rápida y efectiva para recibir la próxima celebración. Para ello, tercerizar tu
+                                servicio de limpieza contratando profesionales y expertos en el rubro es la mejor
+                                opción. Dejá en nuestras manos la limpieza para poder enfocarte en los detalles de tu
+                                espacio!
+                            </p>
+                            <h3 class="mt-5 mb-2 h4 text-black fw-semibold">Limpiezas profesionales y efectivas</h3>
+                            <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
+                            <p class=" fs-6">
+                                Contratar nuestros servicios implica brindar a tus clientes un espacio limpio y
+                                organizado, con garantía de profesionalidad y experiencia. Asegurate que la primera
+                                impresión no sea la última y que quieran volver a crear momentos y recuerdos
+                                inolvidables en tu salón!
+                            </p>
+                            <h3 class="mt-5 mb-2 h4 text-black fw-semibold">Servicio de limpieza flexible y
+                                personalizado</h3>
+                            <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
+                            <p class=" fs-6">
+                                No todos los salones son iguales, por lo que no todos los servicios son iguales. Nuestro
+                                equipo puede adaptarse a tus requisitos y brindar un servicio ajustado a tu bolsillo y
+                                necesidades.
+                            </p>
+                            <div class="row mt-5">
+                                <h3 class=" h4 text-black fw-semibold">Nuestros distintivos del servicio</h3>
+                                <div class="col">
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap ">
+                                        <p class="services">Brindamos un servicio confiable y profesional.</p>
+                                    </i>
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap ">
+                                        <p class="services">Contamos con supervisión constante y minuciosa del
+                                            personal.</p>
+                                    </i>
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap d-none ">
+                                        <p class="services">Ofrecemos la oportunidad de personalizar el servicio
+                                            acorde a los requerimientos y horarios de la institución.</p>
+                                    </i>
+                                </div>
+                                <div class="col">
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap ">
+                                        <p class="services">Corrección de estilo</p>
+                                    </i>
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap ">
+                                        <p class="services">Edición de imágenes.</p>
+                                    </i>
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap ">
+                                        <p class="services">Soporte.</p>
+                                    </i>
+                                </div>
                             </div>
-                            <div class="col">
-                                <p class="bi bi-check-lg">Corrección de estilo</p>
-                                <p class="bi bi-check-lg">Edición de imágenes.</p>
-                                <p class="bi bi-check-lg"> Soporte.</p>
+                            <a class="fs-4 fw-bold" href="cotizacion.html">Solicite una cotización ahora
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                            <div>
+                                <small>
+                                    El precio puede ser más bajo (o más alto) dependiendo del servicio.
+                                </small>
                             </div>
                         </div>
                     </article>
                 </div>
             </article>
         </section>
-        <section id="multi-page" class="min-vh-100 bg-hero-image"
-            style="--bg-image: url(../img/img/site-multipage.jpg)">
-            <article class="min-vh-100 bg-alpha-color d-flex align-items-center">
-                <!-- Incorporacion de una capa transparente sobre la imagen -->
+        <section class="min-vh-100 bg-hero-image  background-img-two">
+            <article id="limpieza-oficinas" class="min-vh-100 bg-alpha-color d-flex align-items-center p-lg-5">
                 <div class="container">
-                    <article class="col-12 col-lg-6 ">
-                        <a class="btn btn-lg btn-success text-white mb-5" href="contacto.html">
-                            <b>Desde $1.000<small>USD</small></b>
-                            <!-- La etiqueta <b> Indica que el texto debe ser representado con una variable bold, o negrita,de la tipografía que se esté usando. -->
-                        </a>
-                        <h2>Sitio multipágina</h2>
-                        <small>
-                            El precio puede ser más bajo (o más alto) dependiendo de los requisitos de sus proyectos.
-                        </small>
-                        <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
-                        <p class="my-5 fs-5">
-                            Un <b>sitio web de varias páginas</b> consta de dos o más páginas. Este formato es útil si
-                            tiene ciertos elementos que desea mantener separados por páginas y urls diferentes.
-                        </p>
-                        <a class="fs-4 fw-bold" href="contacto.html">Solicite una cotización ahora
-                            <i class="bi bi-chevron-right"></i>
-                        </a>
-                        <div class="row mt-5">
-                            <div class="col">
-                                <p class="bi bi-check-lg">2 a 6 páginas.</p>
-                                <p class="bi bi-check-lg"> 100% Responsivo.</p>
-                                <p class="bi bi-check-lg">Diseño personalizado.</p>
+                    <article class="col-12 col-lg-12 d-lg-flex flex-lg-row-reverse gap-lg-5 mt-lg-5 mt-3">
+                        <div class="img-events ">
+                            <img src="../img/limpieza-oficina.jpg" alt="Limpieza de eventos">
+                        </div>
+                        <div class="info-events">
+                            <h2 class="h1 fw-bold  mt-4 mt-lg-0 mt-sm-0 ">LIMPIEZA PARA OFICINAS</h2>
+                            <h3 class="mt-5 mb-2 h4 text-black fw-semibold">Limpieza y seguridad a la hora de trabajar
+                            </h3>
+                            <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
+                            <p class=" fs-6 ">
+                                <!-- La etiqueta <b> Indica que el texto debe ser representado con una variable bold, o negrita,de la tipografía que se esté usando. -->
+                                Un espacio de trabajo limpio es primordial, al igual que contar con un servicio de
+                                limpieza confiable. En <b> Ericin pro cleaners</b>, nos ocupamos de brindar higiene y
+                                seguridad
+                                para todo tipo de establecimientos, avalados por vuestros más de 17 años de experiencia.
+                            </p>
+                            <h3 class="mt-5 mb-2 h4 text-black fw-semibold">Calidad adicional para tu espacio</h3>
+                            <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
+                            <p class=" fs-6">
+                                Nuestro objetivo es que la limpieza de la oficina sea un peso menos para vos y no una
+                                preocupación más. Nuestro equipo garantiza una limpieza profunda, con seguimiento de
+                                protocolos e implementación de insumos de primera calidad.
+                            </p>
+                            <h3 class="mt-5 mb-2 h4 text-black fw-semibold">Un servicio que se adapta a vos</h3>
+                            <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
+                            <p class=" fs-6">
+                                Cada oficina es única y cada servicio también lo es. Nos encargamos de otorgar un
+                                servicio de limpieza flexible a un precio competitivo, asegurándonos que nuestros
+                                clientes estén satisfechos y tengan un equipo en quien confiar.
+                            </p>
+                            <div class="row mt-5">
+                                <h3 class=" h4 text-black fw-semibold">Tercerizar el servicio de limpieza puede traerte
+                                    muchos beneficios</h3>
+                                <div class="col">
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap ">
+                                        <p class="services">Planes Limpiar + Proteger para una opción más estandarizada!
+                                        </p>
+                                    </i>
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap ">
+                                        <p class="services">Servicio confiable basado en la baja rotación de nuestros
+                                            operarios y la supervisión del servicio.</p>
+                                    </i>
+                                </div>
+                                <div class="col">
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap ">
+                                        <p class="services">Atención personalizada y por múltiples canales de
+                                            comunicación.</p>
+                                    </i>
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap ">
+                                        <p class="services">Horarios y presupuesto adaptado a tus necesidades.</p>
+                                    </i>
+                                </div>
                             </div>
-                            <div class="col">
-                                <p class="bi bi-check-lg">Corrección de estilo.</p>
-                                <p class="bi bi-check-lg">Edición de imágenes.</p>
-                                <p class="bi bi-check-lg"> Soporte.</p>
+                            <a class="fs-4 fw-bold" href="cotizacion.html">Solicite una cotización ahora
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                            <div>
+                                <small>
+                                    El precio puede ser más bajo (o más alto) dependiendo del servicio.
+                                </small>
                             </div>
                         </div>
                     </article>
                 </div>
             </article>
+        </section>
+        <section class="min-vh-100 bg-hero-image background-img-three ">
+            <article id="limpiaza-depositos" class="min-vh-100 bg-alpha-color d-flex align-items-center p-lg-5">
+                <!-- Incorporacion de una capa transparente sobre la imagen -->
+                <div class="container">
+                    <article class="col-12 col-lg-12 d-lg-flex gap-lg-5 mt-lg-5  mt-3">
+                        <div class="img-events">
+                            <img src="../img/limpieza-deposito.jpg" alt="Limpieza de depositos">
+                        </div>
+                        <div class="info-events  mb-lg-5">
+                            <h2 class="h1 fw-bold  mt-4 mt-lg-0 mt-sm-0 ">LIMPIEZA DE DEPÓSITOS</h2>
+                            <h3 class="mt-5 mb-2 h4 text-black fw-semibold">¿Qué es una limpieza de depósitos?</h3>
+                            <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
+                            <p class=" fs-6 ">
+                                <!-- La etiqueta <b> Indica que el texto debe ser representado con una variable bold, o negrita,de la tipografía que se esté usando. -->
+                                La <b>limpieza de depósitos</b> consiste en limpiar en profundidad los suelos ya que
+                                constantemente lo transitan personas y máquinas, desinfectar e higienizar los elementos
+                                que se usan a diario y recolectar los residuos que se generan. Es primordial estar en
+                                todos los detalles al momento de hacer la limpieza por lo que, contratar un equipo de
+                                profesionales que estén capacitados en dichas tareas, hará que está actividad no sea de
+                                tu preocupación.
+                            </p>
+                            <h3 class="mt-5 mb-2 h4 text-black fw-semibold">Servicio profesional de limpieza certificado
+                            </h3>
+                            <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
+                            <p class=" fs-6">
+                                Sabemos que manejar depósitos y almacenes conlleva una gran responsabilidad, incluyendo
+                                la limpieza y mantenimiento del espacio. Esto se vuelve dificultoso con la entrada y
+                                salida de empleados y mercadería, el levantamiento de polvo, etc. Para asegurar que no
+                                se junte tierra y suciedad, nuestro equipo se encarga de brindar un servicio profesional
+                                y de calidad, enfocándose en todas las superficies de contacto y los lugares más
+                                transitados.
+                            </p>
+                            <h3 class="mt-5 mb-2 h4 text-black fw-semibold">Limpieza a gran escala</h3>
+                            <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
+                            <p class=" fs-6">
+                                Los depósitos y almacenes requieren de una limpieza especializada e integral que nuestro
+                                equipo está capacitado para brindar. El servicio se adapta a tus necesidades y las de tu
+                                negocio, y puede incluir: tratamiento de pisos, limpieza y desinfección de superficies,
+                                entre otras tareas.
+                            </p>
+                            <div class="row mt-5">
+                                <h3 class=" h4 text-black fw-semibold">¡Beneficios de nuestro servicio de limpieza
+                                    incomparables!</h3>
+                                <div class="col">
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap ">
+                                        <p class="services">Contamos con atención personalizada y presupuestos ajustados
+                                            a tu bolsillo.</p>
+                                    </i>
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap ">
+                                        <p class="services">Nos adaptamos a tu horario y tus necesidades específicas.
+                                        </p>
+                                    </i>
+                                </div>
+                                <div class="col">
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap ">
+                                        <p class="services">Corrección de estilo</p>
+                                    </i>
+                                </div>
+                            </div>
+                            <a class="fs-4 fw-bold" href="cotizacion.html">Solicite una cotización ahora
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                            <div>
+                                <small>
+                                    El precio puede ser más bajo (o más alto) dependiendo del servicio.
+                                </small>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </article>
+        </section>
+        <section class="min-vh-100 bg-hero-image  background-img-four">
+            <article id="limpiaza-comercial" class="min-vh-100 bg-alpha-color d-flex align-items-center p-lg-5">
+                <div class="container">
+                    <article class="col-12 col-lg-12 d-lg-flex flex-lg-row-reverse gap-lg-5 mt-lg-5  mt-3">
+                        <div class="img-events">
+                            <img src="../img/limpieza-comercial.jpg" alt="Limpieza de eventos">
+                        </div>
+                        <div class="info-events  mb-lg-5">
+                            <h2 class="h1 fw-bold  mt-4 mt-lg-0 mt-sm-0 ">LIMPIEZA EN ESTABLECIMIENTOS COMERCIALES Y
+                                RETAIL</h2>
+                            <h3 class="mt-5 mb-2 h4 text-black fw-semibold">¿Qué es un servicio de limpieza comercial?
+                            </h3>
+                            <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
+                            <p class=" fs-6 ">
+                                <!-- La etiqueta <b> Indica que el texto debe ser representado con una variable bold, o negrita,de la tipografía que se esté usando. -->
+                                Un servicio de limpieza comercial consiste en mantener los pisos, escaleras, toilettes y
+                                demás espacios en óptimas condiciones. Es importante usar los insumos de limpieza
+                                adecuados y de primera calidad para que el lugar esté reluciente, como así también,
+                                contar con el personal capacitado para realizar estas actividades.
+                            </p>
+                            <h3 class="mt-5 mb-2 h4 text-black fw-semibold">Negocios limpios y brillantes</h3>
+                            <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
+                            <p class=" fs-6">
+                                Tener clientes satisfechos es un trabajo de tiempo completo en cualquier comercio, y en
+                                Limptech lo sabemos. La imagen de tu establecimiento es tan importante como la atención
+                                que brindas. Dejá en nuestras manos la limpieza integral y continua de tu local para que
+                                puedas enfocarte en dar el mejor servicio y atención.
+                            </p>
+                            <h3 class="mt-5 mb-2 h4 text-black fw-semibold">Que la limpieza de tu local de para hablar..
+                                para bien!</h3>
+                            <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
+                            <p class=" fs-6">
+
+                                Al entrar a un comercio, activamos nuestros cinco sentidos. Que tu negocio se vea, huela
+                                y esté limpio es un imperativo. Además de proveer las condiciones de higiene y sanidad
+                                para tus empleados, aseguras una gran primera impresión… y una review de cinco
+                                estrellas!
+                            </p>
+                            <h3 class="mt-5 mb-2 h4 text-black fw-semibold">Limpieza visible y palpable</h3>
+                            <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
+                            <p class=" fs-6">
+                                Como mencionamos antes, entrar a un local activa todos nuestros sentidos, siendo el
+                                tacto uno de ellos. Por esta razón, las superficies y áreas de alto contacto deben ser
+                                constantemente higienizadas para evitar la propagación de gérmenes y bacterias que pueda
+                                haber en el ambiente.
+                            </p>
+                            <h3 class="mt-5 mb-2 h4 text-black fw-semibold">Limpiezas seguras y efectivas</h3>
+                            <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
+                            <p class=" fs-6">
+                                Contratar <b>Ericin pro cleaners</b> es contar con la seguridad de que la limpieza de tu
+                                local está en manos de profesionales. Así, te evitas una preocupación extra y te enfocas
+                                solo en las ventas! Además, contamos con una oferta muy completa ya que ofrecemos
+                                limpiezas integrales y orientadas al detalle para que todas las áreas estén impecables.
+                            </p>
+                            <div class="row mt-5">
+                                <h3 class=" h4 text-black fw-semibold">Beneficios de contratar nuestro servicio de
+                                    limpieza</h3>
+                                <div class="col">
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap ">
+                                        <p class="services">Atención personalizada y horarios que se ajustan a tu
+                                            agenda.</p>
+                                    </i>
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap d-none ">
+                                        <p class="services">Contamos con opciones para todos los presupuestos y acordes
+                                            a tus necesidades.</p>
+                                    </i>
+                                </div>
+                                <div class="col">
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap ">
+                                        <p class="services">Nuestro personal está capacitado para asegurar la limpieza
+                                            profunda de cualquier tipo de establecimiento.</p>
+                                    </i>
+                                </div>
+                            </div>
+                            <a class="fs-4 fw-bold" href="cotizacion.html">Solicite una cotización ahora
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                            <div>
+                                <small>
+                                    El precio puede ser más bajo (o más alto) dependiendo del servicio.
+                                </small>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </article>
+        </section>
+        <section class="min-vh-100 bg-hero-image  background-img-five">
+            <article id="limpiaza-casas" class="min-vh-100 bg-alpha-color d-flex align-items-center p-lg-5">
+                <!-- Incorporacion de una capa transparente sobre la imagen -->
+                <div class="container">
+                    <article class="col-12 col-lg-12 d-lg-flex  gap-lg-5">
+                        <div class="img-events">
+                            <img src="../img/limpieza-hogar.jpg" alt="Limpieza de hogar">
+                        </div>
+                        <div class="info-events  mb-lg-5">
+                            <h2 class="h1 fw-bold  mt-4 mt-lg-0 mt-sm-0 ">LIMPIEZA PARA EL HOGAR</h2>
+                            <h3 class="mt-5 mb-2 h4 text-black fw-semibold">
+                                ¿Qué es un servicio de limpieza para el hogar?</h3>
+                            <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
+                            <p class=" fs-6 ">
+                                <!-- La etiqueta <b> Indica que el texto debe ser representado con una variable bold, o negrita,de la tipografía que se esté usando. -->
+                                Un <b>servicio de limpieza para el hogar</b> implica llevar a cabo una limpieza
+                                exhaustiva antes y después de cada ocasión, abarcando todas las áreas de la casa y
+                                asegurándose de reponer cualquier suministro faltante. Esta limpieza incluye la
+                                higienización y desinfección detallada de todos los rincones.
+                            </p>
+                            <h3 class="mt-5 mb-2 h4 text-black fw-semibold">Soluciones rápidas de limpieza</h3>
+                            <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
+                            <p class=" fs-6">
+                                Para aquellos momentos en los que necesitas una solución rápida y efectiva para recibir
+                                a tus invitados en casa, nuestro servicio de limpieza ofrece soluciones ágiles. Al
+                                tercerizar esta tarea a profesionales del rubro, puedes dedicar tu tiempo y energía a
+                                los detalles de tu espacio, mientras nosotros nos encargamos de dejarlo impecable.
+                            </p>
+                            <h3 class="mt-5 mb-2 h4 text-black fw-semibold">Limpiezas profesionales y efectivas</h3>
+                            <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
+                            <p class=" fs-6">
+                                Al contratar nuestros servicios, garantizamos un resultado profesional y efectivo que
+                                deja tu hogar limpio y organizado. Queremos asegurarnos de que la primera impresión de
+                                tus invitados sea positiva y que deseen volver para crear más recuerdos inolvidables en
+                                tu hogar.
+                            </p>
+                            <h3 class="mt-5 mb-2 h4 text-black fw-semibold">Servicio de limpieza flexible y
+                                personalizado</h3>
+                            <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
+                            <p class=" fs-6">
+                                Entendemos que cada hogar es único y tiene diferentes necesidades. Por eso, nuestro
+                                equipo se adapta a tus requisitos específicos y te ofrece un servicio personalizado que
+                                se ajusta a tu presupuesto y necesidades particulares
+                            </p>
+                            <div class="row mt-5">
+                                <h3 class=" h4 text-black fw-semibold">Nuestros distintivos del servicio</h3>
+                                <div class="col">
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap ">
+                                        <p class="services">Brindamos un servicio confiable y profesional.</p>
+                                    </i>
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap d-none ">
+                                        <p class="services">Contamos con supervisión constante y minuciosa del
+                                            personal.</p>
+                                    </i>
+                                </div>
+                                <div class="col">
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap ">
+                                        <p class="services">Contamos con opciones para todos los presupuestos y acordes
+                                            a tus necesidades.</p>
+                                    </i>
+                                </div>
+                            </div>
+                            <a class="fs-4 fw-bold" href="cotizacion.html">Solicite una cotización ahora
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                            <div>
+                                <small>
+                                    El precio puede ser más bajo (o más alto) dependiendo del servicio.
+                                </small>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </article>
+        </section>
+        <section class="min-vh-100 bg-hero-image  background-img-six">
+            <article id="limpiaza-colegios" class="min-vh-100 bg-alpha-color d-flex align-items-center p-lg-5">
+                <div class="container">
+                    <article class="col-12 col-lg-12 d-lg-flex flex-lg-row-reverse gap-lg-5 mt-lg-5 mt-3">
+                        <div class="img-events ">
+                            <img src="../img/limpieza-colegio.jpg" alt="Limpieza de colegios">
+                        </div>
+                        <div class="info-events">
+                            <h2 class="h1 fw-bold  mt-4 mt-lg-0 mt-sm-0 ">LIMPIEZA PARA COLEGIOS</h2>
+                            <h3 class="mt-5 mb-2 h4 text-black fw-semibold">Limpieza y seguridad a la hora de trabajar
+                            </h3>
+                            <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
+                            <p class=" fs-6 ">
+                                <!-- La etiqueta <b> Indica que el texto debe ser representado con una variable bold, o negrita,de la tipografía que se esté usando. -->
+                                En <b>Ericin pro cleaners</b>, nos especializamos en proporcionar servicios de limpieza
+                                y seguridad para colegios, garantizando un entorno limpio y seguro para el aprendizaje
+                                de los estudiantes. Con más de 17 años de experiencia, nos comprometemos a ofrecer
+                                calidad adicional para los espacios educativos.
+                            </p>
+                            <h3 class="mt-5 mb-2 h4 text-black fw-semibold">Calidad Adicional para tu Colegio</h3>
+                            <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
+                            <p class=" fs-6">
+                                Nuestro objetivo es brindar a los colegios una limpieza profunda y segura, implementando
+                                protocolos rigurosos y utilizando insumos de primera calidad. Nos aseguramos de que cada
+                                rincón del colegio esté limpio y desinfectado para crear un entorno óptimo para el
+                                aprendizaje.
+                            </p>
+                            <h3 class="mt-5 mb-2 h4 text-black fw-semibold">Servicio personalizado y flexible</h3>
+                            <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
+                            <p class=" fs-6">
+                                Entendemos que cada colegio es único, por lo que ofrecemos un servicio de limpieza
+                                flexible y personalizado que se adapta a las necesidades específicas de cada institución
+                                educativa. Nos aseguramos de que nuestros clientes estén satisfechos y confíen en
+                                nuestro equipo de profesionales.
+                            </p>
+                            <div class="row mt-5">
+                                <h3 class=" h4 text-black fw-semibold">Beneficios de tercerizar el servicio de limpieza
+                                    en colegios</h3>
+                                <div class="col">
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap ">
+                                        <p class="services">Planes Limpiar + Proteger para una opción más estandarizada!
+                                        </p>
+                                    </i>
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap d-none ">
+                                        <p class="services">Servicio confiable.</p>
+                                    </i>
+                                </div>
+                                <div class="col">
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap ">
+                                        <p class="services">Profesionalismo y Especialización.</p>
+                                    </i>
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap d-none">
+                                        <p class="services">Garantía de Calidad.</p>
+                                    </i>
+                                </div>
+                            </div>
+                            <a class="fs-4 fw-bold" href="cotizacion.html">Solicite una cotización ahora
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                            <div>
+                                <small>
+                                    El precio puede ser más bajo (o más alto) dependiendo del servicio.
+                                </small>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </article>
+        </section>
+        <section class="min-vh-100 bg-hero-image background-img-seven ">
+            <article id="limpiaza-hospitales" class="min-vh-100 bg-alpha-color d-flex align-items-center p-lg-5">
+                <!-- Incorporacion de una capa transparente sobre la imagen -->
+                <div class="container">
+                    <article class="col-12 col-lg-12 d-lg-flex gap-lg-5 mt-lg-5  mt-3">
+                        <div class="img-events">
+                            <img src="../img/limpieza-hospital.jpg" alt="Limpieza de hospitales">
+                        </div>
+                        <div class="info-events  mb-lg-5">
+                            <h2 class="h1 fw-bold  mt-4 mt-lg-0 mt-sm-0 ">LIMPIEZA DE HOSPITALES</h2>
+                            <h3 class="mt-5 mb-2 h4 text-black fw-semibold">¿Qué es una limpieza de hospital?</h3>
+                            <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
+                            <p class=" fs-6 ">
+                                <!-- La etiqueta <b> Indica que el texto debe ser representado con una variable bold, o negrita,de la tipografía que se esté usando. -->
+                                En <b>Ericin pro cleaners</b>, nos especializamos en proporcionar servicios de limpieza
+                                y seguridad para hospitales, garantizando un entorno limpio y seguro para el cuidado de
+                                los pacientes y el trabajo del personal médico.Nuestros servicios de limpieza se
+                                realizan con el más alto estándar de calidad y cumplen con todas las normativas y
+                                protocolos de limpieza hospitalaria para garantizar la máxima higiene y desinfección en
+                                todas las áreas del hospital. Nos aseguramos de que cada rincón del hospital esté
+                                limpio, desinfectado y seguro, para proporcionar un entorno óptimo para la atención
+                                médica y el bienestar de los pacientes.
+                            </p>
+                            <h3 class="mt-5 mb-2 h4 text-black fw-semibold">Calidad adicional para tu hospital
+                            </h3>
+                            <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
+                            <p class=" fs-6">
+                                Nuestro objetivo es brindar a los hospitales una limpieza profunda y segura,
+                                implementando protocolos rigurosos y utilizando insumos de primera calidad. Nos
+                                aseguramos de que cada área del hospital esté limpia y desinfectada para crear un
+                                entorno óptimo para la atención médica.
+                            </p>
+                            <h3 class="mt-5 mb-2 h4 text-black fw-semibold">Servicio personalizado y flexible</h3>
+                            <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
+                            <p class=" fs-6">
+                                Entendemos que cada hospital tiene necesidades específicas, por lo que ofrecemos un
+                                servicio de limpieza flexible y personalizado que se adapta a las exigencias de cada
+                                institución médica. Nos aseguramos de que nuestros clientes estén satisfechos y confíen
+                                en nuestro equipo de profesionales.
+                            </p>
+                            <div class="row mt-5">
+                                <h3 class=" h4 text-black fw-semibold">¡Beneficios de nuestro servicio de limpieza
+                                    incomparables!</h3>
+                                <div class="col">
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap ">
+                                        <p class="services">Uso de equipos y productos especializados.</p>
+                                    </i>
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap d-none">
+                                        <p class="services">Experiencia especializada.
+                                        </p>
+                                    </i>
+                                </div>
+                                <div class="col">
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap ">
+                                        <p class="services">Cumplimiento de normativas.</p>
+                                    </i>
+                                </div>
+                            </div>
+                            <a class="fs-4 fw-bold" href="cotizacion.html">Solicite una cotización ahora
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                            <div>
+                                <small>
+                                    El precio puede ser más bajo (o más alto) dependiendo del servicio.
+                                </small>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </article>
+        </section>
+        <section class="min-vh-100 bg-hero-image  background-img-eight">
+            <article id="limpiaza-consorcios" class="min-vh-100 bg-alpha-color d-flex align-items-center p-lg-5">
+                <div class="container">
+                    <article class="col-12 col-lg-12 d-lg-flex flex-lg-row-reverse gap-lg-5 mt-lg-5  mt-3">
+                        <div class="img-events">
+                            <img src="../img/limpieza-consorcio.jpeg" alt="Limpieza de consorcio">
+                        </div>
+                        <div class="info-events  mb-lg-5">
+                            <h2 class="h1 fw-bold  mt-4 mt-lg-0 mt-sm-0 ">LIMPIEZA EN CONSORCIOS</h2>
+                            <h3 class="mt-5 mb-2 h4 text-black fw-semibold">¿Qué es un servicio de limpieza consorcio?
+                            </h3>
+                            <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
+                            <p class=" fs-6 ">
+                                <!-- La etiqueta <b> Indica que el texto debe ser representado con una variable bold, o negrita,de la tipografía que se esté usando. -->
+
+                                En<b> Ericin Pro Cleaners</b>, nuestra misión es más que simplemente limpiar; nos
+                                comprometemos
+                                a crear un entorno seguro y saludable para los residentes y visitantes de los
+                                consorcios. Nos hemos destacado por nuestra dedicación a la excelencia y nuestro enfoque
+                                en la calidad en cada
+                                servicio que ofrecemos.
+                            </p>
+                            <h3 class="mt-5 mb-2 h4 text-black fw-semibold">Limpieza profesional y segura</h3>
+                            <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
+                            <p class=" fs-6">
+                                Nuestro equipo altamente capacitado utiliza técnicas de limpieza avanzadas y productos
+                                de calidad para garantizar que cada área del consorcio se limpie de manera exhaustiva y
+                                segura. Desde la recepción hasta los pasillos y áreas comunes, nos aseguramos de que
+                                cada espacio esté impecablemente limpio y desinfectado.
+                            </p>
+                            <h3 class="mt-5 mb-2 h4 text-black fw-semibold">Personalización y flexibilidad:</h3>
+                            <!-- utilizando etiquetas dentro de un parafo utilizamos b{parrafo} es = <br>parrafo</b> -->
+                            <p class=" fs-6">
+                                Entendemos que cada consorcio tiene sus propias necesidades y requisitos, por lo que
+                                ofrecemos un servicio de limpieza flexible y personalizado que se adapta a las
+                                características específicas de cada edificio. Nos comprometemos a trabajar en estrecha
+                                colaboración con los administradores y residentes para garantizar su satisfacción.
+                            </p>
+                            <div class="row mt-5">
+                                <h3 class=" h4 text-black fw-semibold">Beneficios de contratar nuestro servicio de
+                                    limpieza</h3>
+                                <div class="col">
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap ">
+                                        <p class="services"> Ahorro de tiempo y recursos.</p>
+                                    </i>
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap d-none ">
+                                        <p class="services">Mejor calidad de limpieza.</p>
+                                    </i>
+                                </div>
+                                <div class="col">
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap ">
+                                        <p class="services"> Reducción de sstrés y preocupaciones</p>
+                                    </i>
+
+                                    <i class="bi bi-check-lg d-sm-flex d-lg-flex felx-lg-wrap d-none">
+                                        <p class="services"> Servicios personalizados</p>
+                                    </i>
+
+                                </div>
+                            </div>
+                            <a class="fs-4 fw-bold" href="cotizacion.html">Solicite una cotización ahora
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                            <div>
+                                <small>
+                                    El precio puede ser más bajo (o más alto) dependiendo del servicio.
+                                </small>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </article>
+        </section>
+        <section id="whatsapp-icon" class="whatsapp-icon">
+            <a href="https://api.whatsapp.com/send?phone=5491140638603" target="_blank"><i
+                    class="bi bi-whatsapp "></i></a>
         </section>
     </main>
-    <footer class="bg-dark p-3">
-        <div class="container text-center">
+    <footer class="pt-5">
+        <div class="container text-center text-sm-start d-sm-flex flex-sm-wrap justify-content-sm-between mb-5">
+            <div class="mb-5 mb-sm-0">
+                <h2 class="text-white h6 fw-bold mb-3">CONTACTANOS</h2>
+                <li class="p"><a
+                        href="https://api.whatsapp.com/send?phone=1140835284text=Hola, Nececito mas informacion!"
+                        target="_blank" class="fs-6 text-decoration-none text-color "><i
+                            class="bi bi-whatsapp text-color fs-4"></i>1140835284</a></li>
+                <li><a href="#" class="fs-6 text-decoration-none text-color"><i
+                            class="bi bi-envelope text-color fs-4 "></i>ericin@gmail.com</a></li>
+            </div>
+            <div class="mb-5 mb-sm-0">
+                <h2 class="text-white h6 fw-bold mb-3">INFORMACIÓN</h2>
+                <li><a href="../index.html#empresa" class="text-decoration-none fs-6 text-color">Quines somos</a></li>
+                <li><a href="servicios.html" class="text-decoration-none fs-6 text-color">Servicios</a></li>
+                <li><a href="cotizacion.html" class="btn btn-primary  fs-6 mt-3 mt-sm-2">cotización</a></li>
+            </div>
+            <div>
+                <img src="../img/logo-ericin.png" alt="ericin pro cleaners" class="img-logo">
+            </div>
+        </div>
+        <!-- align-items-center d-sm-flex justify-content-sm-between align-items-sm-center flex-sm-wrap -->
+        <div
+            class="container text-center d-flex flex-column-reverse align-items-center d-sm-flex flex-sm-row justify-content-sm-between align-items-sm-center flex-sm-wrap">
             <!-- nombre de etiqueta/[atributo][atribito]*cantidad >(nuevaetiqueta).(clase).(clase) -->
             <!--  a[href="https://.com"][target="_blank"]*7>i.bi.bi- -->
-            <nav class=" d-flex  justify-content-evenly"> <!-- fs-3 es font-zise -->
-                <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook fs-3"></i></a>
-                <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter fs-3"></i></a>
-                <a href="https://github.com" target="_blank"><i class="bi bi-github fs-3"></i></a>
-                <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube fs-3"></i></a>
+            <small class="text-white mt-4 mt-sm-0">&copy;2023 @eriksalinas. Hechos con fines de ventas</small>
+            <nav class=" d-flex  flex-wrap justify-content-center"> <!-- fs-3 es font-zise -->
+                <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook fs-3 m-2"></i></a>
                 <a href="https://www.instagram.com/erik__salinass/" target="_blank"><i
-                        class="bi bi-instagram fs-3"></i></a>
-                <!-- Abre conversación de menssenger /probar con nombre o link del perfil-->
-                <a href="https://m.me/erik.salinas.946179.com" target="_blank"><i class="bi bi-messenger fs-3"></i></a>
-                <!-- Abre conversación de whatsapp / usar numero ce celular-->
+                        class="bi bi-instagram fs-3 m-2"></i></a>
                 <a href="https://api.whatsapp.com/send?phone=5491140638603" target="_blank"><i
-                        class="bi bi-whatsapp fs-3"></i></a>
+                        class="bi bi-whatsapp fs-3 m-2"></i></a>
+                <a href="#"><i class="bi  bi-person fs-3 m-2"></i></a>
             </nav>
-            <!-- simbolo de copyray -->
-            <small class="text-white">&copy;2023 @eriksalinas. Hechos con fines de ventas</small>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-    <script src="../javascript/main.js"></script>
+    <script src="../javascript/menu.js"></script>
+    <script src="../javascript/icon.js"></script>
 </body>
 
 </html>

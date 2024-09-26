@@ -15,174 +15,177 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="icon" href="../img/img/favicon.png">
+    <link rel="icon" href="../img/logo-ericin.png">
 </head>
 
 <body>
     <header class="sticky-top">
-        <!-- Coloque un elemento en la parte superior de la ventana gráfica, de borde a borde, pero solo después de pasarlo (el menuse se desplaza con nosotros un usar fixed-top) -->
-        <!-- data-bs-theme="dark" modificamos color de la hamburguesa -->
         <nav class="  navbar  navbar-expand-lg  bg-dark  " data-bs-theme="dark">
             <div class="container">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../img/img/logo-ericin.png" alt="studio Bad Dog">
-                </a> <!-- Eliminacion del borde -->
-                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    <img src="../img/logo-ericin.png" alt="ericin pro cleaners">
+                </a>
+                <button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon "></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <!-- collapse es el desplegado de opciones -->
                 <div class=" collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav  ms-lg-auto">
                         <li class="nav-item">
-                            <!-- active es el identificador de la pagina actual -->
-                            <a class="nav-link " href="../index.html">Inicio</a>
+                            <a class="nav-link " aria-current="page" href="../index.html">La empresa</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Sitios
+                                Servicios
                             </a>
                             <ul class="dropdown-menu">
+                                <li><a class="dropdown-item nav-link" href="servicios.html#limpieza-eventos">
+                                        <i>Limpieza de eventos</i></a></li>
+                                <li><a class="dropdown-item nav-link" href="servicios.html#limpieza-oficinas">
+                                        <i>Limpieza de
+                                            oficinas</i></a></li>
                                 <li><a class="dropdown-item nav-link"
-                                        href="../pages/sitios-web.html#ultimos-proyectos">Últimos
-                                        proyectos</a></li>
-                                <li><a class="dropdown-item nav-link" href="../pages/sitios-web.html#single-page">
-                                        <i>Single
-                                            Page</i></a></li>
-                                <li><a class="dropdown-item nav-link" href="../pages/sitios-web.html#multi-page">
-                                        <i>Multi
-                                            Page</i></a></li>
+                                        href="servicios.html#limpiaza-depositos"><i>Limpieza de
+                                            depositos</i></a></li>
+                                <li><a class="dropdown-item nav-link" href="servicios.html#limpiaza-comercial">
+                                        <i>Limpieza de
+                                            comerciales</i></a></li>
+                                <li><a class="dropdown-item nav-link" href="servicios.html#limpiaza-casas"> <i>Limpieza
+                                            de
+                                            casas</i></a></li>
+                                <li><a class="dropdown-item nav-link" href="servicios.html#limpiaza-colegios">
+                                        <i>Limpieza de
+                                            colegios</i></a></li>
+                                <li><a class="dropdown-item nav-link" href="servicios.html#limpiaza-hospitales">
+                                        <i>Limpieza de
+                                            hospitales</i></a></li>
+                                <li><a class="dropdown-item nav-link" href="servicios.html#limpiaza-consorcios">
+                                        <i>Limpieza de
+                                            consorcios</i></a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/clientes.html">Clientes</a>
+                            <a class="nav-link" href="cobertura.html">Cobertura</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/comencemos.html">Comencemos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                href="../pages/contacto.html">¿Interesado?</a>
+                            <a class="nav-link active" href="contacto.html">¿Interesado?</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <main class="pt-5 bg-color">
-        <div class="container mb-5">
+    <main class="pt-3 pt-lg-5 bg-color ">
+        <div class="container">
             <section class="row">
-                <article class="col-12">
-                    <h1>¿Interesado?</h1>
-                    <p class="fs-5">¡Envíame tus comentarios!</p>
-                    <p class="fs-5">Para más información, puedes contactarme en <a
-                            href="mailto: info@studiobaddog.com">info@studiobaddog.com</a>.</p>
+                <article class="col-12 title">
+                    <h1 class=" h1 fw-bold ">¿INTERESADO?</h1>
+                    <p class="fs-6 text-black">¡Envíame tus comentarios!</p>
+                    <p class="fs-6 text-black">Para más información, puedes contactarme en <a
+                            href="ericin@gmail.com">ericin@gmail.com</a>.</p>
                 </article>
                 <article class="col-12 col-lg-6 order-lg-1">
-                    <form action="https://formsubmit.co/erik61869@gmail.com" method="POST">
-                        <div class="mb-4">
-                            <label class="form-label" for="name">Nombre:</label>
-                            <input class=" form-control" type="text" id="name" name="name" placeholder="Tu nombre"
+                    <form action="#" method="POST" autocomplete="off">
+                        <div class="mb-lg-4 mt-2">
+                            <label class="form-label fs-6 text-black" for="name">Nombre:</label>
+                            <input class=" form-control " type="text" id="name" name="name" 
                                 required>
                         </div>
-                        <div class="mb-4">
-                            <label class="form-label" for="email">Email:</label>
-                            <input class=" form-control" type="email" id="email" name="email" placeholder="Tu correo"
+                        <div class="mb-lg-4  mt-2">
+                            <label class="form-label fs-6 text-black" for="surname">Apellido:</label>
+                            <input class=" form-control" type="text" id="surname" name="surname" 
                                 required>
                         </div>
-                        <div class="mb-4">
-                            <label class="form-label" for="coment">Comentarios:</label>
-                            <textarea rows="5" class="form-control" name="coment" id="coment" placeholder="Déjanos tu comentarios" required></textarea>
+                        <div class="mb-lg-4  mt-2">
+                            <label class="form-label fs-6 text-black" for="tel">Celular:</label>
+                            <input class=" form-control" type="tel" id="tel" name="tel" required>
                         </div>
-                        <div class="mb-3">
-                            <button class="btn btn-lg btn-success" type="submit">Enviar</button>
-                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/bad%20dog/pages/gracias.html"> <!-- Nos redirige a un html de gracias -->
-                            <input type="hidden" name="_subject" value="Comentario del curso de boostrap"> <!-- Nos aparece el correo con el titulo -->
+                        <div class="mb-lg-4  mt-2">
+                            <label class="form-label fs-6 text-black" for="email">Correo:</label>
+                            <input class=" form-control" type="email" id="email" name="email" 
+                                required>
+                        </div>
+                        <div class="mb-lg-4  mt-2">
+                            <label class="form-label fs-6 text-black" for="coment">Comentarios:</label>
+                            <textarea rows="5" class="form-control prueba" name="coment" id="coment"
+                                placeholder="Déjanos tu comentario" ></textarea>
+                        </div>
+                        <div class="mb-lg-4 mt-4">
+                            <input type="checkbox" id="checkbox" name="checkbox" required>
+                            <label class="fs-6 text-black" for="checkbox">Consiento el tratamiento de mis datos</label>
+                            <p class="fs-6 text-black mt-lg-3 mt-3">Ericin tratará sus datos con la finalidad de
+                                contestar a sus
+                                consultas. Puede ejercer sus derechos de acceso, rectificación, supresión, etc., como le
+                                informamos en nuestra <a href="#"> Política de Privacidad y Aviso Legal</a>.</p>
+                        </div>
+                        <div class="mb-3 text-end mt-4">
+                            <button class="btn btn-lg btn-primary " type="submit">Enviar</button>
                         </div>
                     </form>
                 </article>
-                <article class="col-12 col-lg-6">
-                    <div class="ratio ratio-16x9">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26275.87783688223!2d-58.42490928601713!3d-34.59190231718386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57475fd5245%3A0x5eefd3cd753143d7!2sPlanetario%20Galileo%20Galilei!5e0!3m2!1ses!2sar!4v1694991607948!5m2!1ses!2sar"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <article class="col-12  col-lg-6">
+                    <div>
+                        <div class="mt-lg-5">
+                            <h2 class="text-black h4">Atención telefonica</h2>
+                            <p class="text-black fs-6">(011)2937-2034</p>
+                            <p class="text-black fs-6">(011)4632-9832</p>
+                        </div>
+                        <div class="mt-lg-5">
+                            <h2 class="text-black fs-4">Dirección</h2>
+                            <p class="text-black fs-6">CABA, Buenos Aires</p>
+                        </div>
                     </div>
                 </article>
             </section>
         </div>
-        <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-caption bg-second-alpha-color">
-                    <article>
-                        <aside>
-                            <p class="fs-4"><b>Salinas Erik</b>,</p>
-
-                            <p class="fs-5 d-none d-sm-block">Desarrollador Web.</p>
-                        </aside>
-                        <aside class="d-none d-md-block">
-                            <p>Comencé a crear sitios y aplicaciones web en <b>2022</b>.</p>
-
-                            <p>Valoro mucho el concepto de <em>"<b>menos es más</b>"</em>.</p>
-
-                            <p>Trabajo de forma remota e independiente.</p>
-                        </aside>
-                    </article>
-                </div>
-                <div class="carousel-item active">
-                    <img src="../img/img/about-1.jpg" class="d-block w-100" alt="Acerca 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/img/about-2.jpg" class="d-block w-100" alt="Acerca 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/img/about-3.jpg" class="d-block w-100" alt="Acerca 3">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/img/about-4.jpg" class="d-block w-100" alt="Acerca 4">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+        <section id="whatsapp-icon" class="whatsapp-icon">
+            <a href="https://api.whatsapp.com/send?phone=5491140638603" target="_blank"><i
+                    class="bi bi-whatsapp "></i></a>
+        </section>
     </main>
-    <footer class="bg-dark p-3">
-        <div class="container text-center">
+    <footer class="pt-5">
+        <div class="container text-center text-sm-start d-sm-flex flex-sm-wrap justify-content-sm-between mb-5">
+            <div class="mb-5 mb-sm-0">
+                <h2 class="text-white h6 fw-bold mb-3">CONTACTANOS</h2>
+                <li class="p"><a
+                        href="https://api.whatsapp.com/send?phone=1140835284text=Hola, Nececito mas informacion!"
+                        target="_blank" class="fs-6 text-decoration-none text-color "><i
+                            class="bi bi-whatsapp text-color fs-4"></i>1140835284</a></li>
+                <li><a href="#" class="fs-6 text-decoration-none text-color"><i
+                            class="bi bi-envelope text-color fs-4 "></i>ericin@gmail.com</a></li>
+            </div>
+            <div class="mb-5 mb-sm-0">
+                <h2 class="text-white h6 fw-bold mb-3">INFORMACIÓN</h2>
+                <li><a href="../index.html#empresa" class="text-decoration-none fs-6 text-color">Quines somos</a></li>
+                <li><a href="servicios.html" class="text-decoration-none fs-6 text-color">Servicios</a></li>
+                <li><a href="cotizacion.html" class="btn btn-primary  fs-6 mt-3 mt-sm-2">cotización</a></li>
+            </div>
+            <div>
+                <img src="../img/logo-ericin.png" alt="ericin pro cleaners" class="img-logo">
+            </div>
+        </div>
+        <!-- align-items-center d-sm-flex justify-content-sm-between align-items-sm-center flex-sm-wrap -->
+        <div
+            class="container text-center d-flex flex-column-reverse align-items-center d-sm-flex flex-sm-row justify-content-sm-between align-items-sm-center flex-sm-wrap">
             <!-- nombre de etiqueta/[atributo][atribito]*cantidad >(nuevaetiqueta).(clase).(clase) -->
             <!--  a[href="https://.com"][target="_blank"]*7>i.bi.bi- -->
-            <nav class=" d-flex  justify-content-evenly"> <!-- fs-3 es font-zise -->
-                <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook fs-3"></i></a>
-                <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter fs-3"></i></a>
-                <a href="https://github.com" target="_blank"><i class="bi bi-github fs-3"></i></a>
-                <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube fs-3"></i></a>
+            <small class="text-white mt-4 mt-sm-0">&copy;2023 @eriksalinas. Hechos con fines de ventas</small>
+            <nav class=" d-flex  flex-wrap justify-content-center"> <!-- fs-3 es font-zise -->
+                <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook fs-3 m-2"></i></a>
                 <a href="https://www.instagram.com/erik__salinass/" target="_blank"><i
-                        class="bi bi-instagram fs-3"></i></a>
-                <!-- Abre conversación de menssenger /probar con nombre o link del perfil-->
-                <a href="https://m.me/erik.salinas.946179.com" target="_blank"><i class="bi bi-messenger fs-3"></i></a>
-                <!-- Abre conversación de whatsapp / usar numero ce celular-->
+                        class="bi bi-instagram fs-3 m-2"></i></a>
                 <a href="https://api.whatsapp.com/send?phone=5491140638603" target="_blank"><i
-                        class="bi bi-whatsapp fs-3"></i></a>
+                        class="bi bi-whatsapp fs-3 m-2"></i></a>
+                <a href="#"><i class="bi  bi-person fs-3 m-2"></i></a>
             </nav>
-            <!-- simbolo de copyray -->
-            <small class="text-white">&copy;2023 @eriksalinas. Hechos con fines de ventas</small>
-        </div>
     </footer>
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-    <script src="../javascript/main.js"></script>
+    <script src="../javascript/menu.js"></script>
+    <script src="../javascript/icon.js"></script>
 </body>
 
 </html>
